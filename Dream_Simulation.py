@@ -78,7 +78,7 @@ def dream_minecraft_simulation():
                     f"Most Blaze Rods Ever:   ({most_rods_ever_pearls} , {most_rods_ever} , {best_rod_trial})\n"
                     f"Trial Number:           ({number_of_trials})\n"
                 )
-                st.text(output_text)
+                st.write(output_text)
 
                 # Writing the output to a file (optional)
                 with open("Dream_Simulation_Output.txt", "w") as f:
