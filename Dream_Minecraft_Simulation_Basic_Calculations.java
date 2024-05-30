@@ -103,6 +103,8 @@ public class Dream_Minecraft_Simulation {
             x.close();
             BufferedWriter y = new BufferedWriter(new FileWriter(new File("C:\\Users\\michael\\Documents\\Dream_Minecraft_Simulation\\Dream_Simulation_Individual_Trials.txt"),false));
             y.close();
+            BufferedWriter z = new BufferedWriter(new FileWriter(new File("C:\\Users\\michael\\Documents\\Dream_Minecraft_Simulation\\Dream_Simulation_Summary.txt"),false));
+            z.close();
             BufferedWriter trial_writer_csv = new BufferedWriter(new FileWriter(new File("C:\\Users\\michael\\Documents\\Dream_Minecraft_Simulation\\Dream_Simulation_Individual_Trials.csv"),true));
             trial_writer_csv.write("Ender_Pearls,Blaze_Rods\n");
             trial_writer_csv.close();
