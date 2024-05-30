@@ -1,6 +1,0 @@
-Theoretical:            (12 , 152.5)
-Goal:                   (42 , 211)
-Best Complete Run:      (29 , 195 , 1.355694537E9)
-Most Ender Pearls Ever: (43 , 150 , 4.2980314E9)
-Most Blaze Rods Ever:   (10 , 209 , 5.746508594E9)
-Trial Number:           (2.60697E10)
