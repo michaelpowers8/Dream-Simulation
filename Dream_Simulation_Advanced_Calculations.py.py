@@ -2,8 +2,8 @@ from random import randint
 from os import system
 from scipy.stats import binom
 from decimal import Decimal
-# from pandas import DataFrame
-# from gc import disable,enable
+from pandas import DataFrame
+from gc import disable,enable
 
 def probability_n_or_more_pearls(n: int):
     return 1-binom.cdf(n-1, 262, 20/423)
@@ -30,7 +30,7 @@ most_pearls_ever = 0
 most_pearls_ever_rods = 0
 most_rods_ever = 0
 most_rods_ever_pearls = 0
-#trial_results = []
+trial_results = []
 
 while True:
     number_of_ender_pearls = 0
@@ -44,9 +44,9 @@ while True:
     for blazes in range(305):
         if randint(1,2) == 2:
             number_of_blaze_rods += 1
-    # disable()
-    # trial_results.append([number_of_ender_pearls,number_of_blaze_rods])
-    # enable()
+    disable()
+    trial_results.append([number_of_ender_pearls,number_of_blaze_rods])
+    enable()
     total_ender_pearls += number_of_ender_pearls
     total_blaze_rods += number_of_blaze_rods
     probability_current_trial = probability_n_or_more_pearls(number_of_ender_pearls)*probability_n_or_more_blaze_rods(number_of_blaze_rods)
@@ -84,10 +84,10 @@ while True:
             third = True
 
         if number_of_trials % 10000 == 0.0:
-            # disable()
-            # DataFrame(trial_results,columns=['Ender_Pearls','Blaze_Rods']).to_html('Dream_Simulation_Trial_Results.html')
-            # DataFrame(trial_results,columns=['Ender_Pearls','Blaze_Rods']).to_csv('Dream_Simulation_Trial_Results.csv')
-            # enable()
+            disable()
+            DataFrame(trial_results,columns=['Ender_Pearls','Blaze_Rods']).to_html('Dream_Simulation_Trial_Results.html')
+            DataFrame(trial_results,columns=['Ender_Pearls','Blaze_Rods']).to_csv('Dream_Simulation_Trial_Results.csv')
+            enable()
             fourth = True
 
         if first or second or third or fourth:
