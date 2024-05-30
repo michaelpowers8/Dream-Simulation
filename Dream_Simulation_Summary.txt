@@ -1,0 +1,8 @@
+Theoretical:            (12 , 152.5)
+Goal:                   (42 , 211)
+Average:                (12.387695766666667 , 152.50064426666665)
+Best Complete Run:      (27 , 189 , 45,210,842)
+Most Ender Pearls Ever: (36 , 155 , 10,117,977)
+Most Blaze Rods Ever:   (12 , 204 , 69,262,419)
+Trial Number:           (90,000,000)
+Time Elapsed:            1039.6705105 seconds.
