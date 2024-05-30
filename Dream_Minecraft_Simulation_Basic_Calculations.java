@@ -113,21 +113,6 @@ public class Dream_Minecraft_Simulation {
         catch(IOException e){e.printStackTrace();}
     }
 
-    public static void add_to_files(List<List<Integer>> trial_results, List<List<BigDecimal>> trial_results_probabilities){
-        try{
-            BufferedWriter trial_writer_csv = new BufferedWriter(new FileWriter("Dream_Simulation_Individual_Trials.csv",true));
-            BufferedWriter trial_writer_text = new BufferedWriter(new FileWriter("Dream_Simulation_Individual_Trials.txt",true));
-            for(int i=trial_results.size()-10_000_000;i<trial_results.size();i++){
-                trial_writer_csv.write(trial_results.get(i).get(0).toString() + " , " + trial_results.get(i).get(1).toString() + " , " + trial_results_probabilities.get(i).get(0).toString() + " , " + trial_results_probabilities.get(i).get(1).toString() + " , " + trial_results_probabilities.get(i).get(2).toString() + "\n");    
-                trial_writer_text.write(trial_results.get(i).get(0).toString() + " , " + trial_results.get(i).get(1).toString() + " , " + trial_results_probabilities.get(i).get(0).toString() + " , " + trial_results_probabilities.get(i).get(1).toString() + " , " + trial_results_probabilities.get(i).get(2).toString() + "\n"); 
-            }
-            trial_writer_csv.close();
-            trial_writer_text.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     public static void add_to_files(List<List<Integer>> trial_results){
         try{
             BufferedWriter trial_writer_csv = new BufferedWriter(new FileWriter(new File("C:\\Users\\michael\\Documents\\Dream_Minecraft_Simulation\\Dream_Simulation_Individual_Trials.csv"),true));
