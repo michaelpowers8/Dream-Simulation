@@ -33,7 +33,7 @@ The primary objective of this simulation is to:
 
 4. **Update Best Results:** The program checks if the current trial results are the best so far in various categories (e.g., most items collected, lowest probability). If so, it updates the relevant best results.
 
-5. **Periodic Saving:** Every 1,000,000 trials, the program saves the accumulated trial results to the CSV and text files.
+5. **Periodic Saving:** Every 10,000,000 trials, the program saves the accumulated trial results to the CSV and text files.
 
 ### Output
 
@@ -71,4 +71,4 @@ By examining the probabilities and outcomes recorded, readers can gain insights 
 
 ## Conclusion
 
-The Dream Minecraft Simulation provides a comprehensive analysis of item collection probabilities in Minecraft through extensive simulation trials. The recorded data offers valuable insights into the likelihood of various outcomes and helps in understanding the game's stochastic nature.
+The Dream Minecraft Simulation provides a comprehensive analysis of item collection probabilities in Minecraft through extensive simulation trials. The recorded data offers valuable insights into the likelihood of the ourcome that the famous YouTuber Dream accomplished his speedrun ender pearl trades and blaze rods.
