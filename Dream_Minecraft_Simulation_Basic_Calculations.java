@@ -6,8 +6,6 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.File;
 import java.io.IOException;
-import java.math.BigDecimal;
-// import java.math.BigDecimal;
 public class Dream_Minecraft_Simulation {
     public static double number_of_trials = 0.0;
     public static double best_trial_number = 0.0;
@@ -90,7 +88,6 @@ public class Dream_Minecraft_Simulation {
                         "Goal:                   (42 , 211)" + "\n" +
                         "Average:                (" + total_ender_pearls/number_of_trials + " , " + total_blaze_rods/number_of_trials + ")" + "\n" +
                         "Best Complete Run:      (" + max_ender_pearls + " , " + max_blaze_rods + " , " + df.format(best_trial_number) + ")\n" + 
-                        /*"Probability of Best Run: " + lowest_probability_achieved + "\n" +*/
                         "Most Ender Pearls Ever: (" + most_pearls_ever + " , " + most_pearls_ever_rods + " , " + df.format(best_pearl_trial) + ")\n" +
                         "Most Blaze Rods Ever:   (" + most_rods_ever_pearls + " , " + most_rods_ever + " , " + df.format(best_rod_trial) + ")\n" + 
                         "Trial Number:           (" + df.format(number_of_trials) + ")\n" + 
@@ -149,7 +146,6 @@ public class Dream_Minecraft_Simulation {
             "Goal:                   (42 , 211)" + "\n" +
             "Average:                (" + total_ender_pearls/number_of_trials + " , " + total_blaze_rods/number_of_trials + ")" + "\n" +
             "Best Complete Run:      (" + max_ender_pearls + " , " + max_blaze_rods + " , " + df.format(best_trial_number).toString() + ")\n" + 
-            /*"Probability of Best Run: " + lowest_probability_achieved + "\n" +*/
             "Most Ender Pearls Ever: (" + most_pearls_ever + " , " + most_pearls_ever_rods + " , " + df.format(best_pearl_trial).toString() + ")\n" +
             "Most Blaze Rods Ever:   (" + most_rods_ever_pearls + " , " + most_rods_ever + " , " + df.format(best_rod_trial).toString() + ")\n" + 
             "Trial Number:           (" + df.format(number_of_trials) + ")\n" + 
